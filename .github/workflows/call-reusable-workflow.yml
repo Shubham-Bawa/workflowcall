@@ -9,5 +9,5 @@ jobs:
   invoke-reusable-workflow:
     uses: ./.github/workflows/reusable-build.yml  # Call the reusable workflow
     with:
-      node-version: '16'       # Provide input for Node.js version
-      run-tests: true  
+      var1: '16'     
+      var2: true  
