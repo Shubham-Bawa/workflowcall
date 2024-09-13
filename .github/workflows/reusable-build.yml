@@ -3,11 +3,11 @@ name: Reusable Build Workflow
 on:
   workflow_call:
     inputs:
-      node-version:
+      var1:
         description: 'Node.js version to use'
         required: true
         type: string
-      run-tests:
+      var2:
         description: 'Run tests after build'
         required: false
         default: true
