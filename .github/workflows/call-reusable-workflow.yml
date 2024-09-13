@@ -1,0 +1,13 @@
+name: Call Reusable Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  invoke-reusable-workflow:
+    uses: ./.github/workflows/reusable-build.yml  # Call the reusable workflow
+    with:
+      node-version: '16'       # Provide input for Node.js version
+      run-tests: true  
